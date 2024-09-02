@@ -1,4 +1,5 @@
 import React from 'react';
+import heroImg from '../assets/images/hero.jpg'
 
 const Hero = () => {
   return (
@@ -12,7 +13,9 @@ const Hero = () => {
       </p>
     </div>
   
-    <div className='lg:w-1/3 w-full h-full bg-hero-bg bg-cover bg-center rounded-lg mt-2 drop-shadow-lg fade-in-fwd fade-effect'></div>
+    <div className='lg:w-1/3 w-full h-full bg-cover bg-center rounded-lg mt-2 drop-shadow-lg fade-in-fwd fade-effect'>
+    <img src={heroImg} className='w-full h-full object-cover' />
+    </div>
   </section>
   
 
