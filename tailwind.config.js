@@ -12,7 +12,7 @@ export default {
       'white': '#fff'
     },
     backgroundImage: {
-      'hero-bg': "url('src/assets/images/hero.webp')"
+      'hero-bg': "url('src/assets/images/hero.jpg')"
     },
     fontFamily: {
       sacramento: ["Sacramento"],
