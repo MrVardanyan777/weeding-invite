@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.paddings {
+  @apply py-[1rem] px-[2rem] md:py-[4rem] md:px-[3rem]
+}
+
+.fade-in-fwd{-webkit-animation:fade-in-fwd .8s cubic-bezier(.39,.575,.565,1.000) .2s both;animation:fade-in-fwd .8s cubic-bezier(.39,.575,.565,1.000) .2s both}
+@-webkit-keyframes fade-in-fwd{0%{-webkit-transform:translateZ(-80px);transform:translateZ(-80px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes fade-in-fwd{0%{-webkit-transform:translateZ(-80px);transform:translateZ(-80px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
+.text-focus-in{-webkit-animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
+@-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+
+
+.fade-effect {
+  position: relative;
+  overflow: hidden; /* Ensures the gradient stays within the container */
+}
+
+.fade-effect::after {
+  content: '';
+  position: absolute;
+  inset: 0; /* Ensures the overlay covers the entire element */
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1), transparent);
+  pointer-events: none; /* Prevents blocking any interaction with underlying elements */
+  border-radius: inherit; /* Ensures the gradient follows the border radius of the container */
+}
+
