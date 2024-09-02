@@ -6,7 +6,7 @@ const Hero = () => {
     <section className='paddings w-full h-[100vh] flex flex-col md:flex-row justify-evenly items-center'>
       
     <div className='flex flex-col items-center justify-center gap-3 text-center my-5 text-focus-in'>
-      <h1 className='uppercase text-[40px] font-semibold font-serif text-brown'>Հարսանյանց հրավիրատոմս</h1>
+      <h1 className='uppercase text-[40px] font-semibold font-serif text-brown'>Հարսանեկան հրավիրատոմս</h1>
       <p className='text-brown text-[30px] tracking-wider font-greatVibes'>
         Արման ∞ Նանե<br/>
         05.10.2024
